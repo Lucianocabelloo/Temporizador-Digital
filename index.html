@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Pagina en la que realizaremos un Temporizador digital usando js vainilla">
+    <meta name="keywords" content="Prueba, Rollingcode, Practica, Html, Etiquetas, Aprender, Temporizador, responsive">
+    <meta name="author" content="Luciano Cabello" />
+    <meta name="copyright" content="Luciano Antonio" />
+    <title>Temporizador Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
-<body>
-    
+<body class="w-100">
+    <div class="container text-center mt-5">
+
+        <h1 class="mb-4">Temporizador</h1>
+        <div>
+            <label for="inputTime" class="form-label">Ingresa el tiempo en Minutos:</label>
+            <input type="number" id="inputTime" class="form-control mb-3" placeholder="Tiempo en Minutos" />
+        </div>
+
+        <div id="timer" class="display-3 mb-4">00:00:00</div>
+        <button class="btn btn-primary mx-2" onclick="startTimer()">Iniciar</button>
+        <button class="btn btn-warning mx-2" onclick="pauseTimer()">Pausar</button>
+        <button class="btn btn-danger mx-2" onclick="resetTimer()">Reset</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
